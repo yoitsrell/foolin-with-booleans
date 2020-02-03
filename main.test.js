@@ -7,6 +7,8 @@ const {
   returnFalse,
   both,
   either,
+  firstOnly,
+  secondOnly,
   neither,
   itsComplicated,
 } = require('./main')

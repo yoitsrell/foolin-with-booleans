@@ -1,31 +1,64 @@
-let iGetTheJoke;
-let havingFun;
-let learning;
-let killingIt;
+/********************
+ * YOUR CODE BELOW! *
+ ********************/
 
 
-function returnFalse() {
 
+
+
+/********************************************************************************************
+ * CODE BELOW IS FOR EXPORTING THE VARIABLES AND FUNCTIONS YOU WROTE ABOVE TO MAIN.TEST.JS. *
+ *                              THIS IS FOR INTERNAL USE ONLY                               *
+ *                          DON'T ADD TO OR CHANGE ANYTHING BELOW!                          *
+ ********************************************************************************************/
+
+
+if (typeof iGetTheJoke === 'undefined') {
+  iGetTheJoke = undefined;
 }
 
-function isOpposite(condition) {
-
+if (typeof havingFun === 'undefined') {
+  havingFun = undefined;
 }
 
-function both(condition1, condition2) {
-
+if (typeof learning === 'undefined') {
+  learning = undefined;
 }
 
-function either(condition1, condition2) {
-
+if (typeof killingIt === 'undefined') {
+  killingIt = undefined;
 }
 
-function neither(condition1, condition2) {
-
+if (typeof isOpposite === 'undefined') {
+  isOpposite = undefined;
 }
 
-function itsComplicated(condition1, condition2, condition3) {
+if (typeof returnFalse === 'undefined') {
+  returnFalse = undefined;
+}
 
+if (typeof both === 'undefined') {
+  both = undefined;
+}
+
+if (typeof either === 'undefined') {
+  either = undefined;
+}
+
+if (typeof firstOnly === 'undefined') {
+  firstOnly = undefined;
+}
+
+if (typeof secondOnly === 'undefined') {
+  secondOnly = undefined;
+}
+
+if (typeof neither === 'undefined') {
+  neither = undefined;
+}
+
+if (typeof itsComplicated === 'undefined') {
+  itsComplicated = undefined;
 }
 
 
@@ -38,6 +71,8 @@ module.exports = {
   isOpposite,
   both,
   either,
+  firstOnly,
+  secondOnly,
   neither,
   itsComplicated,
 }
