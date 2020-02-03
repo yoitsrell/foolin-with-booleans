@@ -101,11 +101,33 @@ describe('either', () => {
     expect(either(true, false)).toBe(true)
     expect(either(false, true)).toBe(true)
   })
-
+  
   it('returns `false` if both parameters are `false`', () => {
     expect(either(false, false)).toBe(false)
   })
 })
+
+describe('firstOnly', () => {
+  it('is a function', () => {
+    expect(typeof either).toBe('function')
+  })
+
+  it(`returns true if the first parameter is true and the second is false`, () => {
+    expect(firstOnly(true, false)).toBe(true);
+  })
+
+  it(`returns false if the first parameter is false and the second is true`, () => {
+    expect(firstOnly(false, true)).toBe(false)
+  })
+
+  it(`returns false if neither parameter is true`, () => {
+    expect(firstOnly(false, false)).toBe(false)
+  })
+
+  it(`returns false if both parameters are true`, () => {
+    expect(firstOnly(true, true)).toBe(false)
+  })
+});
 
 describe('neither', () => {
   it('is a function', () => {
