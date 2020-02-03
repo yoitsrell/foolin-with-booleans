@@ -129,6 +129,29 @@ describe('firstOnly', () => {
   })
 });
 
+describe('secondOnly', () => {
+  it('is a function', () => {
+    expect(typeof either).toBe('function')
+  })
+
+  it(`returns false if the first parameter is true and the second is false`, () => {
+    expect(secondOnly(true, false)).toBe(false);
+  })
+
+  it(`returns true if the first parameter is false and the second is true`, () => {
+    expect(secondOnly(false, true)).toBe(true)
+  })
+
+  it(`returns false if neither parameter is true`, () => {
+    expect(secondOnly(false, false)).toBe(false)
+  })
+
+  it(`returns false if both parameters are true`, () => {
+    expect(secondOnly(true, true)).toBe(false)
+  })
+});
+
+
 describe('neither', () => {
   it('is a function', () => {
     expect(typeof neither).toBe('function')
