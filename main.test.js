@@ -119,6 +119,9 @@ describe('neither', () => {
   it('returns `false` if either parameter is `true`', () => {
     expect(neither(false, true)).toBe(false)
     expect(neither(true, false)).toBe(false)
+  })
+  
+  it(`returns false if both parmaeters are true`, () => {
     expect(neither(true, true)).toBe(false)
   })
 })
